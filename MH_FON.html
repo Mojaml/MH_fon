@@ -20,6 +20,27 @@
      display: flex;
      justify-content: center;
      align-items: center;
+      font-family: Arial, sans-serif;
+
+      /* خلفية متدرجة */
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a6c1ee);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+    }
+
+    h1 {
+      color: white;
+      font-size: 3em;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+  
+     
  } 
     .contener{
         display: flex;
@@ -214,7 +235,7 @@ button:hover {
                 <ul>
                     <li>iPhone</li>
                     <li>Samsung</li>
-                    <li>Oppo</li>i
+                    <li>Oppo</li>
                     <li>realme</li>
                 </ul>
                 
